@@ -25,6 +25,7 @@ class Bitcoind < Formula
   depends_on "boost"
   depends_on "openssl"
   depends_on "miniupnpc" => :recommended
+  depends_on "libevent"
 
   if build.with? "gui"
     depends_on "qt5"
